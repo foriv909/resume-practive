@@ -1,0 +1,404 @@
+*{
+  font-family: 'Acme', sans-serif;
+  /*font-family: 'Noto Sans TC', sans-serif;*/
+}
+html{
+  width:100%;    
+  overflow-x:hidden;
+}
+
+#topButton{
+  display:inline-block;
+  position:fixed;
+  bottom:50px;
+  right:60px;
+}
+
+.topButton{
+  font-size:3em;
+  color:#FF1744;
+}
+
+.header{
+  background:url(../imgs/gratisography-lonely-road-blue-sky.jpg) no-repeat;
+  background-size:cover;
+  background-position:center;
+  text-align:center;
+  height:92vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.headerContainer{
+  z-index:101;
+  display:inline-block;
+}
+
+.greetingContainer{
+  font-size:4em;
+  text-transform:uppercase;
+}
+.sentenceContainer{
+  font-size:1.5em;
+}
+
+.navbar{
+  z-index:998;
+  position:sticky;
+  top:0;
+  left:0;
+  width:100%;
+  opacity:0.6;
+  background-color:#64B5F6;
+  color:#000;
+  height:8vh;
+}
+.navbarContainer{
+  width:90%;
+  margin:0 auto;
+  text-align:center;
+  font-size:1.5em;
+}
+
+.flex-nav{
+  display:flex; /*平均分配在ul Container*/
+  justify-content: space-around; /*前後留空白,分布在container*/
+}
+
+.navbarItem{
+  display:inline-block;
+  line-height:8vh;
+  border-radius:20px;
+  color:#000;
+  text-decoration: none;
+  transition:all 0.6s ease; 
+  text-decoration:none;
+}
+
+.nav{
+  display:inline-block;
+}
+.navbarPersonal:hover{
+  background-color:#0D47A1;
+  color:#E65100;
+}
+
+.navbarEducation:hover{
+  background-color:#283593;
+  color:#C62828;
+}
+
+.navbarExperience:hover{
+  background-color:#FBC02D;
+  color:#512DA8;
+}
+
+.navbarSkills:hover{
+  background-color:#D81B60;
+  color:#43A047;
+}
+
+.navbarContact:hover{
+  background-color:#fff;
+  color:#000;
+}
+
+.personalTitle{
+  text-align:center;
+  height:150px;
+  line-height:150px;
+  font-size:2em;
+  background-color:#0D47A1;
+  color:#E65100;
+}
+
+.educationTitle{
+  text-align:center;
+  height:150px;
+  line-height:150px;
+  font-size:2em;
+  background-color:#283593;
+  color:#C62828;
+}
+
+.experienceTitle{
+  text-align:center;
+  height:150px;
+  line-height:150px;
+  font-size:2em;
+  background-color:#FBC02D;
+  color:#512DA8;
+}
+
+.skillTitle{
+  text-align:center;
+  height:150px;
+  line-height:150px;
+  font-size:2em;
+  background-color:#D81B60;
+  color:#43A047;
+}
+
+.contactTitle{
+  text-align:center;
+  height:150px;
+  line-height:150px;
+  font-size:2em;
+  background-color:#FAFAFA;
+  color:#000;
+}
+
+.personalContent{
+  text-align:center;
+  padding: 80px 0;
+  background-color:#BBDEFB;
+}
+.imgContainer{
+  padding: 25px 10px;
+  margin: 15px 0;
+  box-sizing: border-box;
+  display:inline-block;
+}
+
+.img{
+  padding-top:10px;
+  clip-path:polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+
+.textContainer{
+  text-align:center;
+  display:inline-block;
+  width:470px;
+  padding: 25px 10px;
+  margin: 15px 0;
+  box-sizing:border-box;
+  word-wrap:break-word;
+  vertical-align: top;
+}
+.personalText{
+  padding:10px 20px;
+  font-size:1.5em;
+  line-height:1.3;
+}
+
+.partText{
+  text-indent:2em;
+  margin-bottom:20px;
+}
+
+.educationContainer{
+  padding: 10px 20px;
+}
+
+.educationTextContainer{
+  text-align:center;
+  background-color:#C5CAE9;
+  padding: 80px 0;
+}
+
+.educationContent{
+  display:inline-block;
+  margin: 40px 0;
+  padding: 0 50px;
+  width:500px;
+  word-wrap:break-word;
+  vertical-align: top;
+  box-sizing: border-box;
+}
+
+.educationText{
+  font-size:1.5em;
+  line-height:1.3;
+  text-align:left;
+}
+
+.experienceContentContainer{
+  text-align:center;
+  background-color: #FFF9C4;
+  padding: 80px 0;
+}
+
+.experienceContent{
+  display:inline-block;
+  word-wrap:break-word;
+  vertical-align: top;
+  width:500px;
+  margin: 40px 0;
+  padding: 0 50px;
+  box-sizing: border-box;
+}
+
+.experienceText{
+  font-size:1.5em;
+  line-height:1.3;
+  text-align:left;
+}
+
+.skillContentContainer{
+  background-color: #F8BBD0;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.skillContent{
+  display:inline-block;
+  padding: 0 60px;
+  margin-top: 50px;
+}
+ 
+.htmlCircle{
+  margin-top:30px;
+  width:250px;
+  height:250px;
+  border-radius:999em;
+  background-color:#FF3333;
+  background-image:linear-gradient(to right, transparent 50%, grey 0);
+}
+
+.htmlCircle::before{
+  content:'';
+  display:block;
+  margin-left:50%;
+  height:100%;
+  border-radius: 0 100% 100% 0 / 50%;
+  background-color:inherit;
+  transform-origin: left;
+  transform: rotate(.25turn);
+}
+
+.cssCircle{
+  margin-top:30px;
+  width:250px;
+  height:250px;
+  border-radius:999em;
+  background-color:#FF7744;
+  background-image:linear-gradient(to right, transparent 50%, grey 0);
+}
+
+.cssCircle::before{
+  content:'';
+  display:block;
+  margin-left:50%;
+  height:100%;
+  border-radius: 0 100% 100% 0 / 50%;
+  background-color:inherit;
+  transform-origin: left;
+  transform: rotate(.2turn);
+}
+
+.jsCircle{
+  margin-top:30px;
+  width:250px;
+  height:250px;
+  border-radius:999em;
+  background-color:#DDAA00;
+  background-image:linear-gradient(to right, transparent 50%, grey 0);
+}
+
+.jsCircle::before{
+  content:'';
+  display:block;
+  margin-left:50%;
+  height:100%;
+  border-radius: 0 100% 100% 0 / 50%;
+  background-color:inherit;
+  transform-origin: left;
+  transform: rotate(.37turn);
+}
+
+.jqCircle{
+  margin-top:30px;
+  width:250px;
+  height:250px;
+  border-radius:999em;
+  background-color:#66DD00;
+  background-image:linear-gradient(to right, transparent 50%, grey 0);
+}
+
+.jqCircle::before{
+  content:'';
+  display:block;
+  margin-left:50%;
+  height:100%;
+  border-radius: 0 100% 100% 0 / 50%;
+  background-color:inherit;
+  transform-origin: left;
+  transform: rotate(.4turn);
+}
+
+.gitCircle{
+  margin-top:30px;
+  width:250px;
+  height:250px;
+  border-radius:999em;
+  background-color:#009FCC;
+  background-image:linear-gradient(to right, transparent 50%, grey 0);
+}
+
+.gitCircle::before{
+  content:'';
+  display:block;
+  margin-left:50%;
+  height:100%;
+  border-radius: 0 100% 100% 0 / 50%;
+  background-color:inherit;
+  transform-origin: left;
+  transform: rotate(.5turn);
+}
+
+.describe{
+  margin-top:20px;
+  font-size:1.2em;
+  text-align:center;
+}
+
+.contactContentContainer{
+  margin:0 auto;
+  text-align:center;
+  background-color:#000;
+  color:#fff;
+}
+.contactContent{
+  display:inline-block;
+  width:700px;
+  margin-bottom:100px;
+}
+
+.basicData{
+  text-align:left;
+}
+.basicDataText{
+  padding-top: 50px;
+  font-family: 'Hanalei Fill', cursive;
+  font-size:2em;
+}
+
+.itemText{
+  margin-bottom:7px;
+}
+
+.communityText{
+  font-size:5em;
+}
+
+.facebook{
+  color:rgb(27, 27, 245);
+  text-decoration: none;
+}
+
+.ig{
+  color:#E93EFF;
+  text-decoration: none;
+}
+
+.line{
+  color:rgb(28, 243, 28);
+  text-decoration: none;
+}
+
+.footerContainer{
+  background-color:#FF1744;
+  height:50px;
+  line-height:50px;
+  text-align:center;
+}
